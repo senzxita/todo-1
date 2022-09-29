@@ -10,5 +10,5 @@ api.listen(3000, () => {
 //     res.send('Hello World!');
 // });
 api.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname+'/index.html'));
+    res.sendFile(__dirname+'/index.html');
 });
