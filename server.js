@@ -9,6 +9,6 @@ api.listen(3000, () => {
 //     console.log(req);
 //     res.send('Hello World!');
 // });
-app.get('/', function(req, res){
+api.get('/', (req, res) => {
     res.sendFile(path.join(__dirname+'/index.html'));
 });
